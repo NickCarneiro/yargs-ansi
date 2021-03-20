@@ -32,10 +32,7 @@ export default {
       process.exit(code);
     },
     nextTick: process.nextTick,
-    stdColumns:
-      typeof process.stdout.columns !== 'undefined'
-        ? process.stdout.columns
-        : null,
+    stdColumns: null,
   },
   readFileSync,
   require: require as any,
